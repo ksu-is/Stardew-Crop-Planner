@@ -1,0 +1,42 @@
+#Shows the way the games forms the prices of the crops being bought or sold
+
+
+
+All items in the game that can be bought or sold have a base price the games uses to calculate the sell price. According to the person who has a similar Github repository, 
+who I am using to help guide me in my work, says the games buy price for items in simply <code>Base Price * 2</code> 
+
+The sell price is listed below (excluding profession bonuses). Each crop has a qaulity given to it. Which fertilizers help improve the quality of that item. The quality of a crop is given
+as a multiplier. Base quality/normal quality crops are given the number 0 as its multiplier. Silver quality crops are given the multiplier 1, and gold qaulity crops receive a multiplier of 2.
+
+To calcuate the sell price of an item, use this formula: 
+
+    Sell Price = Base Price * (1 + (Quality * .25)) 
+
+
+*Note: some items have sell/buy prices that deviate from the above formulas. These prices are likely hard-coded into the game.*
+
+
+#Profit-per-day 
+
+Crops profits-per-day are calculated using the minimum sell price of a crop. 
+
+profit per day = ((Total Yielded Harvests * Sells For) - (Seed Price * Total Plantings)) / (Final Harvest Date - 1) 
+
+
+Examples: 
+
+Example 1 - Parsnip
+Parsnips take 4 days to grow after the day they are planted. In Spring, they can be planted 6 times and yield a total of 6 Parsnips, assuming replanting occurs on the same day of harvesting. The last harvest occurs on Day 25. Seeds cost 20g, and Parsnips sell for a minimum of 35g.
+
+((6 * 35g) - (20g * 6)) / (25 - 1)
+90g / 24
+<b>= 3.75g/day</b>
+
+
+
+Example 2 - Corn
+Corn takes 14 days to grow after the day it is planted. In Spring and Fall, it is planted once and can yield a total of 11 Corn. The last harvest occurs on Day 55. Seeds cost 150g, and Corn sells for a minimum of 50g.
+
+((11 * 50g) - (150g * 1)) / (55 - 1)
+400g / 54
+<b>= 7.4g/day</b>
