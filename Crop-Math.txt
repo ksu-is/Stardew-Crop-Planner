@@ -1,6 +1,9 @@
 #Shows the way the games forms the prices of the crops being bought or sold
 
 
+Growth Time:
+    If a plant takes 5-days to grow into harvest, and it is planted on the first day of the season, then it will be ready on day-6. Think of it as nights needed to grow for a plant.
+
 
 All items in the game that can be bought or sold have a base price the games uses to calculate the sell price. According to the person who has a similar Github repository, 
 who I am using to help guide me in my work, says the games buy price for items in simply <code>Base Price * 2</code> 
