@@ -1,17 +1,17 @@
 Update 1:
 
-Created personal repository in the KSU-IS Github location. Began setting up my repository to fit requirements for sprint 1.
+  Created personal repository in the KSU-IS Github location. Began setting up my repository to fit requirements for sprint 1.
 
 
 Update 2:
 
-Created projectroadmap and created some files to be used in the future. Such as an images file and a file with some in-game math that will be used later when calculating prices
+  Created projectroadmap and created some files to be used in the future. Such as an images file and a file with some in-game math that will be used later when calculating prices
 of crops and plants being bought and sold.
 
 
 Update 3: 
 
-Met with Farha on teams to discuss possible ways of completing this project. Created an index.html for the calendar. (Meeting with professor Thomas next monday to seek guidance
+  Met with Farha on teams to discuss possible ways of completing this project. Created an index.html for the calendar. (Meeting with professor Thomas next monday to seek guidance
 on how to make this program work on a calendar. Which, if it's too difficult for my skill-level, I will resort to a print statements to fulfill the goal of this project.) 
 After meeting with Farha, I began creating and typing out my code for the crop-planner. I began by making a function for the crops: corn, wheat and sunflowers, because these crops 
 are able to be grown in summer and fall. So they require a little more if statements than just a crop that grows in one season. 
@@ -19,4 +19,9 @@ are able to be grown in summer and fall. So they require a little more if statem
 
 Update 4: 
 
-Critqued code for crop planner. Added some comments here and there to specify the role of somethings.  Added, removed, and update somethings to my project roadmap.
+  Critqued code for crop planner. Added some comments here and there to specify the role of somethings.  Added, removed, and update somethings to my project roadmap.
+
+
+Update 5:
+  Researched some in-game mathematics to have stored for later when  I reach that point of my code.
+
