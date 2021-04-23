@@ -18,9 +18,10 @@ There are a ton of functions and structure that could help me with my structure 
 **Sprint 2**
 
 Create a projectroadmap for this project: [X]
-Begin designing and organizing code repository: [ ]
-Begin structuralizing Stardew Crop Planner: [ ]
-Start creating code: [ ]
+Begin designing and organizing code repository: [X]
+Begin structuralizing Stardew Crop Planner: [X]
+Start creating code: [X]
+Finish creating code: [ ]
 
 
 **Sprint 3** 
