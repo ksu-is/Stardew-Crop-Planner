@@ -3,6 +3,8 @@ two_season_crop = ['summer','fall']
 ancient_seeds = ['spring','summer','fall']
 
 
+#Creating function to calculate plant growth time for corn, wheat and sunflowers because they are able to be grown in Summer and Fall which is unique
+
 def corn_wheat_sunflower_harvest():
     seed = input("Which seed are you planting? ")
     if seed.lower() == "corn":
