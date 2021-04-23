@@ -43,3 +43,23 @@ Corn takes 14 days to grow after the day it is planted. In Spring and Fall, it i
 ((11 * 50g) - (150g * 1)) / (55 - 1)
 400g / 54
 <b>= 7.4g/day</b>
+
+
+#Speed Grows make plants grow faster by a certain rate.
+
+Speed Grow/Super Speed Grow:
+
+    Speed grow: 
+        Stimulates leaf production. Guaranteed to increase growth rate by at least 10%. Mix into tilled soil.
+        Note: Does not reduce time between harvests for multi-harvest crops.
+
+    Deluxe Speed Grow: 
+        Stimulates leaf production. Guaranteed to increase growth rate by at least 25%. Mix into tilled soil.
+        Note: Does not reduce time between harvests for multi-harvest crops.
+
+    Hyper Speed Grow:
+        Greatly stimulates leaf production. Guaranteed to increase growth rate by at least 33%. Mix into tilled soil.
+       
+
+#I've considered using fertilizers for my code, but with the complexity of how they affect the percentage of a silver/gold/platinum crop is too complicated. Percentages vary 
+depending on account level as well as if you are a farming profession
