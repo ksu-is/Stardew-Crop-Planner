@@ -17,32 +17,62 @@ special_crops = ['ancient fruit','cactus fruit','pineapple','qi fruit','sweet ge
 #Creating function to calculate plant growth time for corn, wheat and sunflowers because they are able to be grown in Summer and Fall which is unique
 
 def corn_wheat_sunflower_harvest():
-    seed = input("Which seed are you planting? ")
+    seed = input("Enter the seed of which you are planting? (or enter 'quit' to exit) ")
     if seed.lower() in summer_fall_crops:
         print("You are planting",seed)
         season = input("Which season is it currently? ")
-        elif seed.lower() in spring_summer_crops: 
-            print("You are planting",seed)
-            season = input("Which season is it currently? ")
-            elif seed.lower() in spring_crops:
-                print("You are planting",seed)
-                season = input("Which season is it currently? ")
-                elif seed.lower() in summer_crops:
-                    print("You are planting",seed)
-                    season = input("Which season is it currently? ")
-                    elif seed.lower() in fall_crops:
-                        print("You are planting",seed)
-                        season = input("Which season is it currently? ")
-        if season.lower() in summer_fall:
-            print("This crop is in season. \n")
+        if season.lower() == "summer":
+            print("This crop is in season.") 
+            day = input("What day of the season is it? ")
+        elif season.lower() == "fall":
+            print("This crop is in season.")
+            day = input("What day of the season is it? ")
+        else: 
+            print("It is not the season to plant and grow these seeds. ")
+    elif seed.lower() in spring_summer_crops: 
+        print("You are planting",seed)
+        season = input("Which season is it currently? ")
+        if season.lower() == "spring":
+            print("This crop is in season.")
+            day = input("What day of the season is it? ")
+        elif season.lower() == "summer": 
+            print("This crop is in season.")
             day = input("What day of the season is it? ")
         else:
-            print("Not able to be planted in the current season")
-            if day >= 14:
-                print("It's too late in the season to plant",seed,". It will not yield any product.")
-            elif day <= 9:
-                print("You will receive 1 harvest and an extra re-growth harvest before the season ends (unless it is summer). ")
-            else:
-                print("You will only receive 1 harvest once the seeds fully grow (unless it is summer). ")
+            print("It is not the season to plant and grow these seeds. ")
+    elif seed.lower() in spring_crops:
+        print("You are planting",seed)
+        season = input("Which season is it currently? ")
+        if season.lower() == "spring":
+            print("This crop is in season. ")
+            day = input("What day of the season is it? ")
+        else: 
+            print("It is not the season to plant and grow these seeds. ")
+    elif seed.lower() in summer_crops:
+        print("You are planting",seed)
+        season = input("Which season is it currently? ")
+        if season.lower() == "summer": 
+            print("This crop is in season. ") 
+            day = input("What day of the season is it? ")
+        else: 
+            print("Is is not the season to plant and grow these seeds")
+    elif seed.lower() in fall_crops:
+        print("You are planting",seed)
+        season = input("Which season is it currently? ")
+        if season.lower() == "fall":
+            print("This crop is in season. ") 
+            day = input("What day of the season is it? ")
+        else: 
+            print("Is is not the season to plant and grow these seeds")
+    elif seed.lower() in special_crops: 
+        print("You are planting", seed)
+        season = input("Which season is it currently? ")
+    elif seed.lower() == "quit": 
+        return
+    else:
+        print("Unrecognized seed: check spelling and try again. ")
+        corn_wheat_sunflower_harvest() 
+
+
 
 corn_wheat_sunflower_harvest()
