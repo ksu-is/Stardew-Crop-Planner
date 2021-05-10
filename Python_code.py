@@ -16,7 +16,7 @@ fall_crops = ['amaranth','artichoke','beet','bok choy','cranberries','eggplant',
 
 #Creating function to calculate plant growth time for corn, wheat and sunflowers because they are able to be grown in Summer and Fall which is unique
 
-def corn_wheat_sunflower_harvest():
+def stardew_crop_planner():
     seed = input("Enter the seed of which you are planting? (or enter 'quit' to exit) ")
     if seed.lower() in summer_fall_crops:
         print("You are planting",seed)
@@ -154,8 +154,8 @@ def corn_wheat_sunflower_harvest():
         return
     else:
         print("Unrecognized seed: check spelling and try again. ")
-corn_wheat_sunflower_harvest() 
+        stardew_crop_planner()
 
 
 
-corn_wheat_sunflower_harvest()
+stardew_crop_planner()
