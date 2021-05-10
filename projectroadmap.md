@@ -1,4 +1,3 @@
-
 [ ] - Not Completed
 [X] - Completed
 
@@ -25,6 +24,6 @@ Continue creating code: [X]
 
 **Sprint 3** 
 
-Tweak any final changes to code and project: [ ]  
-Create powerpoint slides that explain project: [ ]   
-Copy Github Repository for D2L: [ ]  
+Tweak any final changes to code and project: [X]  
+Create powerpoint slides that explain project: [X]   
+Copy Github Repository for D2L: [X]  
